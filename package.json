@@ -1,0 +1,34 @@
+{
+  "name": "phaser-parcel",
+  "version": "1.0.0",
+  "description": "A Phaser 3 game template using Parcel bundler",
+  "main": "src/index.html",
+  "scripts": {
+    "dist": "parcel build src/index.html -d docs --public-url ./ --experimental-scope-hoisting",
+    "start": "parcel serve src/index.html",
+    "clean": "rm -rfv dist && rm -rf .cache",
+    "test": "eslint src"
+  },
+  "keywords": [
+    "phaser",
+    "phaser3",
+    "phaser-boilerplate"
+  ],
+  "author": "opyate",
+  "license": "NONE",
+  "dependencies": {
+    "lodash": "^4.17.20",
+    "phaser": "^3.24.1"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "eslint": "^5.16.0",
+    "eslint-config-semistandard": "^13.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "typescript": "^4.0.3"
+  }
+}
