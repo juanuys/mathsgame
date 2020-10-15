@@ -1,23 +1,23 @@
-import Phaser from 'phaser';
-import gameConfig from './gameConfig';
+import Phaser from 'phaser'
+import gameConfig from './gameConfig'
 
 function newGame () {
-  if (game) return;
-  game = new Phaser.Game(gameConfig);
+  if (game) return
+  game = new Phaser.Game(gameConfig)
 }
 
 function destroyGame () {
-  if (!game) return;
-  game.destroy(true);
-  game.runDestroy();
-  game = null;
+  if (!game) return
+  game.destroy(true)
+  game.runDestroy()
+  game = null
 }
 
-let game;
+let game
 
 if (module.hot) {
-  module.hot.dispose(destroyGame);
-  module.hot.accept(newGame);
+  module.hot.dispose(destroyGame)
+  module.hot.accept(newGame)
 }
 
-if (!game) newGame();
+if (!game) newGame()
