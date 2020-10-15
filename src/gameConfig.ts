@@ -1,8 +1,8 @@
 import Phaser from 'phaser';
-import BootScene from './BootScene';
-import PlayScene from './PlayScene';
-import MenuScene from './MenuScene';
-import EndScene from './EndScene';
+import BootScene from './scenes/BootScene';
+import PlayScene from './scenes/PlayScene';
+import MenuScene from './scenes/MenuScene';
+import EndScene from './scenes/EndScene';
 
 export default {
   type: Phaser.AUTO,
